@@ -1,20 +1,34 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# Team Synapse: Elastic Curriculum
 
-This contains everything you need to run your app locally.
+4
 
-View your app in AI Studio: https://ai.studio/apps/drive/1bnRy-hSVP3hQRse4aQ37Pwb_3HiN52-N
+## 🚀 Getting Started in VS Code
 
-## Run Locally
+1. **Install Prerequisites**: Ensure [Node.js](https://nodejs.org/) (v18+) is installed.
+2. **Setup Folder**: Open this project folder in VS Code.
+3. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
+4. **Environment Configuration**:
+   - Copy `.env.example` to a new file named `.env`.
+   - Add your [Gemini API Key](https://aistudio.google.com/app/apikey) to the `VITE_API_KEY` field.
+5. **Start Development**:
+   ```bash
+   npm run dev
+   ```
+6. **Launch**: Click the local link (usually `http://localhost:3000`) in your terminal.
 
-**Prerequisites:**  Node.js
+## 🛠 Project Structure
+- `App.tsx`: Central hub for navigation and state management.
+- `services/gemini.ts`: AI service layer using Gemini 3.
+- `services/storage.ts`: Local persistent registry for user profiles.
+- `components/`: Modular UI components (Visualizers, Chatbot, Onboarding).
+- `types.ts`: TypeScript definitions for robust data handling.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛡 Features
+- **Elastic Curriculum**: Adaptive learning paths based on intensity and wellness.
+- **Neural Alerts**: Automated and manual time-slot reminder system.
+- **Advanced Assessment**: AI-generated "Probe" quizzes with high difficulty.
+- **Academic Proctor**: Context-aware AI assistant for scholarly guidance.
